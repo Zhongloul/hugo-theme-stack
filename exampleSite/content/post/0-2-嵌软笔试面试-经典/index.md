@@ -16,7 +16,7 @@ tags = [
 
 ### 零值
 
->1、请填写 bool , float, 指针变量 与“零值”比较的 if语句。
+>1、==请填写 bool , float, 指针变量 与“零值”比较的 if语句==。
 >
 >提示：这里“零值”可以是 0, 0.0 , FALSE 或者“空指针”。例如 int 变量 n 与“零值”比较的 if 语句为： if ( n == 0 )   if ( n != 0 ) 以此类推。
 >
@@ -60,15 +60,15 @@ tags = [
 >
 >【标准答案】（1）6、（2）4、（3）4
 >
->（4） void Func ( char str[100]){}
+>==（4） void Func ( char str[100]){}==
 >
->请计算 sizeof( str ) =
+>==请计算 sizeof( str ) ===
 >
->（5） void *p = malloc( 100 );
+>==（5） void *p = malloc( 100 );==
 >
->请计算sizeof ( p ) =
+>==请计算sizeof ( p ) ===
 >
->【标准答案】（4）4、（5）4
+>==【标准答案】（4）4、（5）4==
 
 ### 变量定义
 
@@ -196,7 +196,7 @@ strcpy(szstr,"0123456789");
 
 >c和c++中的struct有什么不同？
 >
->【标准答案】c和c++中struct的主要区别是c中的struct 不可以含有成员函数，而c++中的struct可以。c++中struct和class的主要区别在于默认的存取权限不同， struct默认为public，而class默认为private
+>【标准答案】==c和c++中struct的主要区别是c中的struct 不可以含有成员函数，而c++中的struct可以。c++中struct和class的主要区别在于默认的存取权限不同， struct默认为public，而class默认为private==
 
 >```c
 >int main()
@@ -538,7 +538,7 @@ void foo(void)
 
 ```
 
-### other
+### ==other==
 
 ```c
 // 1. 一语句实现x是否为2的若干次幂的判断。

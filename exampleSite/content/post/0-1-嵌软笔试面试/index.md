@@ -8,7 +8,8 @@ categories = [
 ]
 tags = [
     "嵌软笔试面试"
-]
+]![image-20240514112259907](C:\Users\liaofj_\AppData\Roaming\Typora\typora-user-images\image-20240514112259907.png)
+
 +++
 ![](1.jpg)
 
@@ -35,7 +36,7 @@ tags = [
 >2) 三重条件操作符的知识。这个操作符存在C语言中的原因是它使得编译器能产生比if-then-else更优化的代码，了解这个用法是很重要的。
 >3) 懂得在宏中小心地把参数用括号括起来
 >4) 我也用这个问题开始讨论宏的副作用，例如：当你写下面的代码时会发生什么事？
->   least = MIN(*p++, b)；
+>     least = MIN(*p++, b)；
 
 ### 死循环
 
@@ -64,8 +65,8 @@ tags = [
 > b)一个指向整型数的指针（ A pointer to an integer） 
 > c)一个指向指针的的指针，它指向的指针是指向一个整型数（ A pointer to a pointer to an intege）r 
 > d)一个有10个整型数的数组（ An array of 10 integers） 
-> e) 一个有10个指针的数组，该指针是指向一个整型数的。（An array of 10 pointers to integers） 
-> f) 一个指向有10个整型数数组的指针（ A pointer to an array of 10 integers） 
+> e) ==一个有10个指针的数组，该指针是指向一个整型数的==。（An array of 10 pointers to integers） 
+> f) ==一个指向有10个整型数数组的指针==（ A pointer to an array of 10 integers） 
 > g) 一个指向函数的指针，该函数有一个整型参数并返回一个整型数（A pointer to a function that takes an integer as an argument and returns an integer） 
 > h) 一个有10个指针的数组，该指针指向一个函数，该函数有一个整型参数并返回一个整型数（ An array of ten pointers to functions that take an integer argument and return an integer ）
 >
@@ -101,11 +102,11 @@ tags = [
 >
 >我也如下的几下理由：
 >
->1) 关键字const的作用是为给读你代码的人传达非常有用的信息，实际上，声明一个参数为常量是为了告诉了用户这个参数的应用目的。如果你曾花很多时间清理其它人留下的垃圾，你就会很快学会感谢这点多余的信息。（当然，懂得用const的程序员很少会留下的垃圾让别人来清理的。）
+>1) 关键字const的作用是为给读你代码的人传达非常有用的信息，==实际上，声明一个参数为常量是为了告诉了用户这个参数的应用目的==。如果你曾花很多时间清理其它人留下的垃圾，你就会很快学会感谢这点多余的信息。（当然，懂得用const的程序员很少会留下的垃圾让别人来清理的。）
 >2) 通过给优化器一些附加的信息，使用关键字const也许能产生更紧凑的代码。
->3) 合理地使用关键字const可以使编译器很自然地保护那些不希望被改变的参数，防止其被无意的代码修改。简而言之，这样可以减少bug的出现。
+>3) 合理地使用关键字const可以使编译器很自然地保护那些不希望被改变的参数，防止其被无意的代码修改。简而言之，这样可以==减少bug的出现==。
 
-### volatile含意
+### ==volatile含意==
 
 >一个定义为volatile的变量是说这变量可能会被意想不到地改变，这样，编译器就不会去假设这个变量的值了。精确地说就是，优化器在用到这个变量时必须每次都小心地重新读取这个变量的值，而不是使用保存在寄存器里的备份。下面是volatile变量的几个例子：
 >
